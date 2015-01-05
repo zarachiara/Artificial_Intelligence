@@ -1,0 +1,27 @@
+Extracting features...
+Extracting features...
+Starting on 12-1 at 14:07:46
+
+Question q1
+===========
+
+*** PASS: test_cases/q1/1-tinygrid.test
+*** PASS: test_cases/q1/2-tinygrid-noisy.test
+*** PASS: test_cases/q1/3-bridge.test
+*** PASS: test_cases/q1/4-discountgrid.test
+*** PASS: test_cases/q1/5-coord-extractor.test
+
+### Question q1: 4/4 ###
+
+
+Finished at 14:07:48
+
+Provisional grades
+==================
+Question q1: 4/4
+------------------
+Total: 4/4
+
+Your grades are NOT yet registered.  To register your grades, make sure
+to follow your instructor's guidelines to receive credit on your project.
+

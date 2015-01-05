@@ -1,0 +1,2650 @@
+Doing classification
+--------------------
+data:		pacman
+classifier:		perceptron
+using enhanced features?:	False
+training set size:	100
+Extracting features...
+Training...
+[({'West': {'foodCount': 96}, 'East': {'foodCount': 96}, 'Stop': {'foodCount': 97}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 95}, 'East': {'foodCount': 96}, 'Stop': {'foodCount': 96}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 94}, 'East': {'foodCount': 95}, 'Stop': {'foodCount': 95}}, ['West', 'Stop', 'East']), ({'North': {'foodCount': 93}, 'East': {'foodCount': 94}, 'Stop': {'foodCount': 94}}, ['Stop', 'East', 'North']), ({'North': {'foodCount': 92}, 'Stop': {'foodCount': 93}, 'South': {'foodCount': 93}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 91}, 'East': {'foodCount': 91}, 'Stop': {'foodCount': 92}, 'South': {'foodCount': 92}, 'North': {'foodCount': 91}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 90}, 'East': {'foodCount': 91}, 'Stop': {'foodCount': 91}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 89}, 'East': {'foodCount': 90}, 'Stop': {'foodCount': 90}, 'South': {'foodCount': 89}}, ['West', 'Stop', 'East', 'South']), ({'North': {'foodCount': 88}, 'East': {'foodCount': 89}, 'Stop': {'foodCount': 89}}, ['Stop', 'East', 'North']), ({'North': {'foodCount': 87}, 'Stop': {'foodCount': 88}, 'South': {'foodCount': 88}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 86}, 'East': {'foodCount': 86}, 'Stop': {'foodCount': 87}, 'South': {'foodCount': 87}, 'North': {'foodCount': 86}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 85}, 'East': {'foodCount': 86}, 'Stop': {'foodCount': 86}}, ['West', 'Stop', 'East']), ({'North': {'foodCount': 84}, 'East': {'foodCount': 85}, 'Stop': {'foodCount': 85}, 'South': {'foodCount': 84}}, ['Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 83}, 'Stop': {'foodCount': 84}, 'South': {'foodCount': 84}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 82}, 'Stop': {'foodCount': 83}, 'South': {'foodCount': 83}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 82}, 'Stop': {'foodCount': 82}, 'South': {'foodCount': 82}}, ['Stop', 'North', 'South']), ({'East': {'foodCount': 81}, 'Stop': {'foodCount': 82}, 'South': {'foodCount': 82}}, ['Stop', 'East', 'South']), ({'West': {'foodCount': 81}, 'East': {'foodCount': 80}, 'Stop': {'foodCount': 81}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 80}, 'East': {'foodCount': 79}, 'Stop': {'foodCount': 80}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 79}, 'Stop': {'foodCount': 79}, 'South': {'foodCount': 78}}, ['West', 'Stop', 'South']), ({'North': {'foodCount': 78}, 'Stop': {'foodCount': 78}, 'South': {'foodCount': 77}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 76}, 'East': {'foodCount': 76}, 'Stop': {'foodCount': 77}, 'North': {'foodCount': 77}}, ['West', 'Stop', 'East', 'North']), ({'West': {'foodCount': 76}, 'East': {'foodCount': 75}, 'Stop': {'foodCount': 76}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 75}, 'East': {'foodCount': 74}, 'Stop': {'foodCount': 75}, 'South': {'foodCount': 74}, 'North': {'foodCount': 74}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 74}, 'East': {'foodCount': 73}, 'Stop': {'foodCount': 74}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 73}, 'East': {'foodCount': 72}, 'Stop': {'foodCount': 73}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 72}, 'East': {'foodCount': 71}, 'Stop': {'foodCount': 72}, 'South': {'foodCount': 72}}, ['West', 'Stop', 'East', 'South']), ({'West': {'foodCount': 71}, 'East': {'foodCount': 70}, 'Stop': {'foodCount': 71}, 'South': {'foodCount': 71}}, ['West', 'Stop', 'East', 'South']), ({'West': {'foodCount': 70}, 'East': {'foodCount': 69}, 'Stop': {'foodCount': 70}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 69}, 'East': {'foodCount': 68}, 'Stop': {'foodCount': 69}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 68}, 'East': {'foodCount': 67}, 'Stop': {'foodCount': 68}, 'South': {'foodCount': 67}, 'North': {'foodCount': 67}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 67}, 'East': {'foodCount': 66}, 'Stop': {'foodCount': 67}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 66}, 'East': {'foodCount': 65}, 'Stop': {'foodCount': 66}, 'North': {'foodCount': 65}}, ['West', 'Stop', 'East', 'North']), ({'West': {'foodCount': 65}, 'Stop': {'foodCount': 65}, 'South': {'foodCount': 64}}, ['West', 'Stop', 'South']), ({'North': {'foodCount': 64}, 'Stop': {'foodCount': 64}, 'South': {'foodCount': 63}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 62}, 'East': {'foodCount': 62}, 'Stop': {'foodCount': 63}, 'South': {'foodCount': 62}, 'North': {'foodCount': 63}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 61}, 'East': {'foodCount': 62}, 'Stop': {'foodCount': 62}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 60}, 'East': {'foodCount': 61}, 'Stop': {'foodCount': 61}}, ['West', 'Stop', 'East']), ({'North': {'foodCount': 59}, 'East': {'foodCount': 60}, 'Stop': {'foodCount': 60}, 'South': {'foodCount': 59}}, ['Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 59}, 'Stop': {'foodCount': 59}, 'South': {'foodCount': 58}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 57}, 'East': {'foodCount': 57}, 'Stop': {'foodCount': 58}, 'South': {'foodCount': 57}, 'North': {'foodCount': 58}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 56}, 'East': {'foodCount': 57}, 'Stop': {'foodCount': 57}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 55}, 'East': {'foodCount': 56}, 'Stop': {'foodCount': 56}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 54}, 'East': {'foodCount': 55}, 'Stop': {'foodCount': 55}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 53}, 'East': {'foodCount': 54}, 'Stop': {'foodCount': 54}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 52}, 'East': {'foodCount': 53}, 'Stop': {'foodCount': 53}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 52}, 'East': {'foodCount': 52}, 'Stop': {'foodCount': 52}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 52}, 'East': {'foodCount': 52}, 'Stop': {'foodCount': 52}, 'South': {'foodCount': 52}, 'North': {'foodCount': 51}}, ['West', 'Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 50}, 'Stop': {'foodCount': 51}, 'South': {'foodCount': 51}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 49}, 'Stop': {'foodCount': 50}, 'South': {'foodCount': 50}, 'North': {'foodCount': 49}}, ['West', 'Stop', 'North', 'South']), ({'West': {'foodCount': 48}, 'East': {'foodCount': 49}, 'Stop': {'foodCount': 49}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 48}, 'East': {'foodCount': 48}, 'Stop': {'foodCount': 48}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 48}, 'East': {'foodCount': 48}, 'Stop': {'foodCount': 48}, 'South': {'foodCount': 48}, 'North': {'foodCount': 47}}, ['West', 'Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 46}, 'Stop': {'foodCount': 47}, 'South': {'foodCount': 47}}, ['Stop', 'North', 'South']), ({'East': {'foodCount': 46}, 'Stop': {'foodCount': 46}, 'South': {'foodCount': 46}}, ['Stop', 'East', 'South']), ({'West': {'foodCount': 46}, 'East': {'foodCount': 46}, 'Stop': {'foodCount': 46}, 'North': {'foodCount': 46}}, ['West', 'Stop', 'East', 'North']), ({'West': {'foodCount': 46}, 'East': {'foodCount': 46}, 'Stop': {'foodCount': 46}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 46}, 'East': {'foodCount': 46}, 'Stop': {'foodCount': 46}, 'South': {'foodCount': 45}, 'North': {'foodCount': 45}}, ['West', 'Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 44}, 'Stop': {'foodCount': 45}, 'South': {'foodCount': 45}}, ['Stop', 'North', 'South']), ({'East': {'foodCount': 43}, 'Stop': {'foodCount': 44}, 'South': {'foodCount': 44}}, ['Stop', 'East', 'South']), ({'West': {'foodCount': 43}, 'East': {'foodCount': 42}, 'Stop': {'foodCount': 43}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 42}, 'East': {'foodCount': 41}, 'Stop': {'foodCount': 42}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 41}, 'East': {'foodCount': 40}, 'Stop': {'foodCount': 41}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 40}, 'East': {'foodCount': 39}, 'Stop': {'foodCount': 40}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 39}, 'East': {'foodCount': 38}, 'Stop': {'foodCount': 39}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 38}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 38}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'Stop': {'foodCount': 37}, 'South': {'foodCount': 36}}, ['West', 'Stop', 'South']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}}, ['West', 'Stop', 'East']), ({'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}, 'South': {'foodCount': 37}}, ['Stop', 'East', 'South']), ({'North': {'foodCount': 37}, 'Stop': {'foodCount': 37}, 'South': {'foodCount': 37}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 37}, 'East': {'foodCount': 37}, 'Stop': {'foodCount': 37}, 'South': {'foodCount': 36}, 'North': {'foodCount': 37}}, ['West', 'Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 36}, 'Stop': {'foodCount': 36}, 'South': {'foodCount': 36}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 36}, 'Stop': {'foodCount': 36}, 'South': {'foodCount': 36}, 'North': {'foodCount': 36}}, ['West', 'Stop', 'North', 'South']), ({'North': {'foodCount': 36}, 'Stop': {'foodCount': 36}, 'South': {'foodCount': 36}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 36}, 'East': {'foodCount': 36}, 'Stop': {'foodCount': 36}, 'South': {'foodCount': 36}, 'North': {'foodCount': 36}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 36}, 'East': {'foodCount': 36}, 'Stop': {'foodCount': 36}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 36}, 'East': {'foodCount': 36}, 'Stop': {'foodCount': 36}, 'South': {'foodCount': 35}}, ['West', 'Stop', 'East', 'South']), ({'North': {'foodCount': 35}, 'Stop': {'foodCount': 35}, 'South': {'foodCount': 34}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 33}, 'Stop': {'foodCount': 34}, 'North': {'foodCount': 34}}, ['West', 'Stop', 'North']), ({'West': {'foodCount': 32}, 'East': {'foodCount': 33}, 'Stop': {'foodCount': 33}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 31}, 'East': {'foodCount': 32}, 'Stop': {'foodCount': 32}}, ['West', 'Stop', 'East']), ({'North': {'foodCount': 30}, 'East': {'foodCount': 31}, 'Stop': {'foodCount': 31}}, ['Stop', 'East', 'North']), ({'North': {'foodCount': 29}, 'Stop': {'foodCount': 30}, 'South': {'foodCount': 30}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 28}, 'Stop': {'foodCount': 29}, 'South': {'foodCount': 29}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}}, ['Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}, 'North': {'foodCount': 28}}, ['West', 'Stop', 'East', 'North', 'South']), ({'West': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}}, ['West', 'Stop', 'East']), ({'West': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}, 'North': {'foodCount': 28}}, ['West', 'Stop', 'North', 'South']), ({'North': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}}, ['Stop', 'North', 'South']), ({'West': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}, 'North': {'foodCount': 28}}, ['West', 'Stop', 'East', 'North', 'South']), ({'North': {'foodCount': 28}, 'Stop': {'foodCount': 28}, 'South': {'foodCount': 28}}, ['Stop', 'North', 'South']), ({'North': {'foodCount': 28}, 'East': {'foodCount': 28}, 'Stop': {'foodCount': 28}}, ['Stop', 'East', 'North'])]
+Starting iteration  0 ...
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+moves
+['West', 'Stop', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+Starting iteration  1 ...
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+moves
+['West', 'Stop', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+Starting iteration  2 ...
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+moves
+['West', 'Stop', 'East', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+South
+moves
+['West', 'Stop', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+South
+moves
+['Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+South
+moves
+['West', 'Stop', 'East', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+North
+moves
+['West', 'Stop', 'North']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+East
+moves
+['West', 'Stop', 'East']
+action
+West
+action
+Stop
+action
+North
+action
+South
+moves
+['West', 'Stop', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+West
+action
+Stop
+action
+East
+action
+North
+action
+South
+moves
+['West', 'Stop', 'East', 'North', 'South']
+action
+Stop
+action
+North
+action
+South
+moves
+['Stop', 'North', 'South']
+action
+Stop
+action
+East
+action
+North
+moves
+['Stop', 'East', 'North']
+Validating...
+88 correct out of 100 (88.0%).
+Testing...
+84 correct out of 100 (84.0%).
